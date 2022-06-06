@@ -25,7 +25,7 @@ except:
     exit()
 
 b ="sever"
-r = requests.get('https://api.npoint.io/365dfdd4fe77a000f2d2')
+r = requests.get('your api')
 r = json.loads(r.text)
 start = "\033[1m"
 end = "\033[0;0m"
@@ -329,8 +329,7 @@ try:
                         time.sleep(2) # Wait for 2 seconds for the page to show up
                         exit()
                 if __name__ == '__main__':
-                    # Enter your login credentials here
-                    #fb_login = FacebookLogin(email='100074258102022', password='0914220047', browser='Chrome')
+                    # Enter your login credentials here                    
                     fb_login = FacebookLogin(email=d, password=e, browser='Chrome')
                     fb_login.login()
                     print("[+] Login successfully")
